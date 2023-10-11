@@ -58,7 +58,10 @@
       linear-gradient(#ff3d00 20px, transparent 0);
   }
 }
-
+/* .error {
+    font-weight: 500;
+    color: red;
+  } */
 body {
   background-color: #dbe6f7;
 }
