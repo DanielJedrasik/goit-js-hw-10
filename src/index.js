@@ -7,7 +7,7 @@ import { fetchBreeds, fetchCatByBreed } from './cat-api';
 
 const catInfo = document.querySelector('.cat-info');
 
-Notiflix.Loading.standard('Loading...', {
+Notiflix.Loading.standard('Please wait...', {
   backgroundColor: 'rgba(0,0,0,0.8)',
 });
 
