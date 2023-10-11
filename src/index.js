@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
       catInfo.innerHTML = `
     <img src="${url}" alt="${breeds.name}" />
-    <div class="description">
+    <div class="cat-finder">
     <h2>${name}</h2>
     <p>${description}</p>
     <p>${temperament}</p>
