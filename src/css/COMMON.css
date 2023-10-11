@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: lightblue;
@@ -13,7 +9,12 @@ img {
   margin-top: 2vh;
   margin-left: 1vw;
 }
-
+.breed-select {
+  max-width: 25%;
+  margin-left: 1vw;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+}
 .cat-info {
   display: flex;
 }
@@ -26,10 +27,4 @@ img {
   text-align: center;
   margin-top: 15vh;
   margin-left: 3vw;
-}
-.breed-select {
-  max-width: 25%;
-  margin-left: 1vw;
-  margin-bottom: 2vw;
-  margin-top: 2vw;
 }

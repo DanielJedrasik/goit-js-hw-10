@@ -1,14 +1,13 @@
 import axios from 'axios';
-axios.defaults.baseURL = 'https://api.thecatapi.com/v1';
+
 axios.defaults.headers.common['x-api-key'] =
   'live_bSSpELqWvwtD9Z5qUkGhJ53bU7iXk6rQT0VyEr999SzyOXsD6cdQxNTpqJ0bQWkL';
-// const axios = require('axios');
-// GET https://api.thecatapi.com/v1/breeds;
+
 export function fetchBreeds() {
   return (
     axios
       .get('https://api.thecatapi.com/v1/breeds')
-      //   .get('https://api.thecatapi.com/v1/breeds1234') //dla testowania błędu
+      //   .get('https://api.thecatapi.com/v1/breeds1234')                       //dla testowania błędu
       .then(response => {
         return response.data;
       })
