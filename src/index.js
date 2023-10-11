@@ -7,7 +7,7 @@ import { fetchBreeds, fetchCatByBreed } from './cat-api';
 
 const catInfo = document.querySelector('.cat-info');
 function showWelcomeNotification() {
-  return new Promise((resolve, reject) => {
+  return new Promise(() => {
     Notiflix.Notify.success('Wellcome on my cat finder site!');
   });
 }
