@@ -6,15 +6,17 @@ import 'notiflix/dist/notiflix-3.2.6.min.css';
 import { fetchBreeds, fetchCatByBreed } from './cat-api';
 
 const catInfo = document.querySelector('.cat-info');
+function showWelcomeNotification() {
+  return new Promise((resolve, reject) => {
+    Notiflix.Notify.success('Wellcome on my cat finder site!');
+  });
+}
+showWelcomeNotification();
 
-Notiflix.Loading.standard('Please wait...', {
-  backgroundColor: 'rgba(0,0,0,0.8)',
-});
+Notiflix.Loading.standard('Just a moment...');
 
 window.addEventListener('DOMContentLoaded', () => {
-  Notiflix.Loading.standard('Loading data, please wait...', {
-    backgroundColor: 'rgba(0,0,0,0.8)',
-  });
+  Notiflix.Loading.standard('Loading data...');
 
   let select = new SlimSelect({
     select: '.breed-select',
@@ -23,9 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const selectedBreedId = data[0].value;
 
         if (selectedBreedId) {
-          Notiflix.Loading.standard('Loading data, please wait...', {
-            backgroundColor: 'rgba(0,0,0,0.8)',
-          });
+          Notiflix.Loading.standard('Loading data...');
           fetchCatByBreed(selectedBreedId)
             .then(catData => {
               console.log(catData);
