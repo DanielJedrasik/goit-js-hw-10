@@ -1,0 +1,84 @@
+.breed-select {
+  width: 200px;
+  height: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+.loader {
+  font-size: 0;
+  margin-top: 10%;
+  display: block;
+  position: relative;
+  height: 30px;
+  width: 280px;
+  background-image: linear-gradient(#fff 20px, transparent 0),
+    linear-gradient(#fff 20px, transparent 0),
+    linear-gradient(#fff 20px, transparent 0),
+    linear-gradient(#fff 20px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 30px auto;
+  background-position: 0 0, 50px 0, 90px 0, 130px 0;
+  animation: pgfill 1s linear infinite;
+}
+@keyframes pgfill {
+  0% {
+    background-image: linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0);
+  }
+  25% {
+    background-image: linear-gradient(#ff3d00 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0);
+  }
+  50% {
+    background-image: linear-gradient(#ff3d00 20px, transparent 0),
+      linear-gradient(#ff3d00 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0);
+  }
+  75% {
+    background-image: linear-gradient(#ff3d00 20px, transparent 0),
+      linear-gradient(#ff3d00 20px, transparent 0),
+      linear-gradient(#ff3d00 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0);
+  }
+  100% {
+    background-image: linear-gradient(#ff3d00 20px, transparent 0),
+      linear-gradient(#ff3d00 20px, transparent 0),
+      linear-gradient(#ff3d00 20px, transparent 0),
+      linear-gradient(#ff3d00 20px, transparent 0);
+  }
+}
+
+body {
+  background-color: #dbe6f7;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.container {
+  padding: 15px;
+  max-width: 728px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cat-info {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
